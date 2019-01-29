@@ -512,4 +512,6 @@ https://github.com/reactstrap/reactstrap/blob/master/src/__tests__/Alert.spec.js
 
 https://github.com/sapegin/jest-cheat-sheet#mocks
 
+Examples: https://github.com/facebook/jest/blob/master/examples/
+
 
