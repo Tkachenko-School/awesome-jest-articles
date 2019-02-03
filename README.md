@@ -80,7 +80,7 @@ https://github.com/ferrannp/enzyme-example-jest/blob/master/src/__tests__/MyComp
 https://stackoverflow.com/questions/47754777/jest-how-to-test-for-object-keys-and-properties
 
 
-
+```
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Enzyme, {shallow, configure } from 'enzyme';
@@ -95,7 +95,7 @@ describe('<Calendar />', () => {
         ReactDOM.render(<Calendar />, div);
     });
 });
-
+```
 
 
 
@@ -144,10 +144,11 @@ enzyme's render function is used to render react components to static HTML and a
 
 if you need installation guide
 https://airbnb.io/enzyme/#installation
-import Adapter from 'enzyme-adapter-react-16';
+
+```import Adapter from 'enzyme-adapter-react-16';
 
 Enzyme.configure({ adapter: new Adapter() });
-
+```
 you should also install and adapter - that help enzyme to work with your project.
 we're using latest react, so we actually don't care a lot about it. 
 adapters table are part of installation guide.
@@ -190,7 +191,7 @@ https://devhints.io/enzyme
 SHALLOW
 1 
 
-
+```
 describe('<MyComponent />', () => {
 ////
 // render an HTML tag inside
@@ -235,7 +236,7 @@ const wrapper = shallow((
 ));
 expect(wrapper.contains(<div className="unique" />)).to.equal(true);
 });
-
+```
 
 
 * Calendar 
@@ -265,7 +266,7 @@ https://airbnb.io/enzyme/docs/api/mount.html
 
 Full DOM rendering is ideal for use cases where you have components that may interact with DOM APIs or need to test components that are wrapped in higher order components.
 
-
+```
 const wrapper = mount(
             <div>
                 <Dummy id="find-me"/>
@@ -275,8 +276,8 @@ const wrapper = mount(
 
 wrapper.debug()
 
-
-
+```
+```
 it('calls componentDidMount', () => {
     sinon.spy(Foo.prototype, 'componentDidMount');
     const wrapper = mount(<Foo />);
@@ -300,7 +301,7 @@ expect(wrap.state('show')).toEqual(true)
 expect('name' in wrap.props()).toEqual(true)
 expect('show' in wrap.state()).toEqual(true)
 
-
+```
 
 Mount is more deeper method.
 what you can do with it - everything that you do at shallow ,but also you can have a parent-child collaboration.
@@ -315,24 +316,24 @@ Debug is a good thing. because sometimes you can be confused
 
 
 
-https://github.com/airbnb/enzyme/issues/1253
+- https://github.com/airbnb/enzyme/issues/1253
 
-https://www.fullstackreact.com/30-days-of-react/day-25/
+- https://www.fullstackreact.com/30-days-of-react/day-25/
 
-https://devhints.io/enzyme
+- https://devhints.io/enzyme
 
-http://blog.sapegin.me/all/react-jest
+- http://blog.sapegin.me/all/react-jest
 
 
 https://github.com/reactstrap/reactstrap/blob/master/src/__tests__/Form.spec.js
 
-https://hackernoon.com/testing-react-components-with-jest-and-enzyme-41d592c174f
+- https://hackernoon.com/testing-react-components-with-jest-and-enzyme-41d592c174f
 
-https://blog.bitsrc.io/how-to-test-react-components-using-jest-and-enzyme-fab851a43875
+- https://blog.bitsrc.io/how-to-test-react-components-using-jest-and-enzyme-fab851a43875
 
-https://bambielli.com/til/2018-03-04-directly-test-react-component-methods/
+- https://bambielli.com/til/2018-03-04-directly-test-react-component-methods/
 
-https://github.com/airbnb/enzyme/blob/master/docs/api/mount.md
+- https://github.com/airbnb/enzyme/blob/master/docs/api/mount.md
 
 
 
@@ -340,11 +341,11 @@ https://github.com/airbnb/enzyme/blob/master/docs/api/mount.md
 
 #### just articles
 
-https://hackernoon.com/api-testing-with-jest-d1ab74005c0a
+- https://hackernoon.com/api-testing-with-jest-d1ab74005c0a
 
-https://medium.com/@ryandrewjohnson/unit-testing-components-using-reacts-new-context-api-4a5219f4b3fe
+- https://medium.com/@ryandrewjohnson/unit-testing-components-using-reacts-new-context-api-4a5219f4b3fe
 
-https://medium.com/@wyattsweet/testing-react-components-using-the-new-context-api-a1c553edc2fa
+- https://medium.com/@wyattsweet/testing-react-components-using-the-new-context-api-a1c553edc2fa
 
 
 
@@ -376,34 +377,34 @@ https://trello.com/c/lkbZOZsS/11-homepage-components-testing
 
 
 
-https://github.com/wesbos/React-Context
+- https://github.com/wesbos/React-Context
 
-https://www.codementor.io/community/topic/jest
-https://www.sitepoint.com/test-react-components-jest/
+- https://www.codementor.io/community/topic/jest
+- https://www.sitepoint.com/test-react-components-jest/
 
-https://facebook.github.io/jest/docs/en/getting-started.html
-https://facebook.github.io/jest/docs/en/tutorial-react.html
-https://hackernoon.com/api-testing-with-jest-d1ab74005c0a
-
-
-
-
-https://jestjs.io/docs/en/mock-functions
-https://stackoverflow.com/questions/50737711/react-s-new-context-api-with-enzyme
-
-https://www.google.com.ua/search?q=jest+react+native&oq=jest+react+native&aqs=chrome..69i57j0l5.5975j0j1&sourceid=chrome&ie=UTF-8
+- https://facebook.github.io/jest/docs/en/getting-started.html
+- https://facebook.github.io/jest/docs/en/tutorial-react.html
+- https://hackernoon.com/api-testing-with-jest-d1ab74005c0a
 
 
 
-https://github.com/kentcdodds/testing-workshop
 
-https://github.com/smooth-code/jest-puppeteer
+- https://jestjs.io/docs/en/mock-functions
+- https://stackoverflow.com/questions/50737711/react-s-new-context-api-with-enzyme
 
-https://github.com/kentcdodds/react-testing-library/issues/152
+- https://www.google.com.ua/search?q=jest+react+native&oq=jest+react+native&aqs=chrome..69i57j0l5.5975j0j1&sourceid=chrome&ie=UTF-8
 
-https://github.com/kentcdodds/react-testing-library-course
 
-https://github.com/christianalfoni/formsy-react/issues/495 
+
+- https://github.com/kentcdodds/testing-workshop
+
+- https://github.com/smooth-code/jest-puppeteer
+
+- https://github.com/kentcdodds/react-testing-library/issues/152
+
+- https://github.com/kentcdodds/react-testing-library-course
+
+- https://github.com/christianalfoni/formsy-react/issues/495 
 
 
 
@@ -428,12 +429,12 @@ https://airbnb.io/enzyme/docs/guides/react-native.html
 
 #### snaphots
 
-https://medium.com/@stipsan/testing-with-jest-15-awesome-tips-and-tricks-42150ec4c262
+- https://medium.com/@stipsan/testing-with-jest-15-awesome-tips-and-tricks-42150ec4c262
 
 
-https://semaphoreci.com/community/tutorials/snapshot-testing-react-components-with-jest
+- https://semaphoreci.com/community/tutorials/snapshot-testing-react-components-with-jest
 
-https://medium.com/@michaelsholty/using-jest-snapshots-in-a-marionette-application-even-with-handlebars-f5c152525006
+- https://medium.com/@michaelsholty/using-jest-snapshots-in-a-marionette-application-even-with-handlebars-f5c152525006
 
 
 #### forms
@@ -467,11 +468,11 @@ GraphQL guides(i think it not work)
 https://www.graphql.com/guides/
 
 TypeScript
-https://www.youtube.com/watch?v=dE0OTdEIXx4
+- https://www.youtube.com/watch?v=dE0OTdEIXx4
 
-https://www.youtube.com/watch?v=j9NZ6SlJfp0
+- https://www.youtube.com/watch?v=j9NZ6SlJfp0
 
-https://www.youtube.com/watch?v=XyqV-kE08Yo
+- https://www.youtube.com/watch?v=XyqV-kE08Yo
 
 GraphQL repository with Jest
 https://github.com/BinPar/jest-gql
@@ -484,13 +485,13 @@ https://github.com/remind101/jest-transform-graphql
 Testing GraphQL container components with React Apollo and Jest 
 https://blog.usejournal.com/testing-graphql-container-components-with-react-apollo-and-jest-9706a00b4aeb
 
-https://stackoverflow.com/questions/50501324/testing-graphql-resolvers-with-jest
-https://www.apollographql.com/docs/graphql-tools/mocking.html
-https://www.robinwieruch.de/react-apollo-client-testing/
-https://dev.to/iwilsonq/learn-to-architect-and-test-graphql-servers-by-observing-spectrum-5din
-https://frontendmasters.com/courses/advanced-graphql/integration-test-with-jest/
-https://focus.parabol.co/unit-test-your-db-with-graphql-and-jest-d88722b4551e
-https://www.npmjs.com/package/jest-transform-graphql
+- https://stackoverflow.com/questions/50501324/testing-graphql-resolvers-with-jest
+- https://www.apollographql.com/docs/graphql-tools/mocking.html
+- https://www.robinwieruch.de/react-apollo-client-testing/
+- https://dev.to/iwilsonq/learn-to-architect-and-test-graphql-servers-by-observing-spectrum-5din
+- https://frontendmasters.com/courses/advanced-graphql/integration-test-with-jest/
+- https://focus.parabol.co/unit-test-your-db-with-graphql-and-jest-d88722b4551e
+- https://www.npmjs.com/package/jest-transform-graphql
 
 
 #### mock
