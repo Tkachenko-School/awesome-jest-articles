@@ -515,4 +515,6 @@ https://github.com/sapegin/jest-cheat-sheet#mocks
 
 Examples: https://github.com/facebook/jest/blob/master/examples/
 
+#### Nodejs endpoints
+- https://blog.campvanilla.com/jest-expressjs-and-the-eaddrinuse-error-bac39356c33a
 
