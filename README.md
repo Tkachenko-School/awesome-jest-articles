@@ -518,3 +518,6 @@ Examples: https://github.com/facebook/jest/blob/master/examples/
 #### Nodejs endpoints
 - https://blog.campvanilla.com/jest-expressjs-and-the-eaddrinuse-error-bac39356c33a
 
+---
+
+- https://github.com/jest-community/jest-extended
