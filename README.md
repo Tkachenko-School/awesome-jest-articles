@@ -521,3 +521,4 @@ Examples: https://github.com/facebook/jest/blob/master/examples/
 ---
 
 - https://github.com/jest-community/jest-extended
+- https://github.com/airbnb/jest-wrap
