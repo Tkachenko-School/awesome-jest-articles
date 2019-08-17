@@ -360,8 +360,8 @@ https://github.com/reactstrap/reactstrap/blob/master/src/__tests__/Form.spec.js
 
 
 
-#### THIS IS MY KING
-https://flaviocopes.com/jest/
+#### THIS IS MY KING: https://flaviocopes.com/jest/
+
 
 
 
